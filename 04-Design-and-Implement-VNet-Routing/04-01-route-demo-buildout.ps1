@@ -6,14 +6,13 @@
 #       1.) Create your own resource group variable.
 #       2.) Comment out variable in variables section.
 #       3.) Uncomment below commands and assign your own resource group and location.
-# rg=your-resource-group-here
-# location=your-location-here
+$rg = "vnetbuild"
+$location = "australiaeast"
 ###############################
 
 ##############################
 ##### START - VARIABLES ######
 ##############################
-
 # Get resource group and set to variable $rg
 $rg = az group list --query '[].name' -o tsv
 
